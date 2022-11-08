@@ -22,13 +22,13 @@
     @apply flex justify-between items-center pt-12 px-24
 }
 body{
-    @apply bg-gray-100 relative w-full
+    @apply bg-gray-100 relative w-full 
 }
 .nav{
     @apply flex space-x-4 items-center text-white
 }
 .main{
-    @apply w-[50%] mb-10 absolute left-[50%]
+    @apply w-[50%] mb-10 absolute left-[25%] 
 }
 .proj-header{
     @apply border rounded-lg -mt-[70px] bg-white pb-5 mb-3
@@ -46,16 +46,19 @@ body{
     @apply flex justify-between items-center px-10 py-4
 }
 .proj-btn p, .proj-btn div{
-    @apply border border-none rounded-3xl text-sm
+    @apply border border-none rounded-3xl text-sm cursor-pointer
 }
 .proj-btn .btp{
-    @apply bg-ModerateCyan p-2
+    @apply bg-ModerateCyan p-2 text-white hover:bg-DarkCyan
 }
 .proj-btn .bookmark{
     @apply flex items-center bg-gray-300 h-[38px] pr-3
 }
 .proj-btn .bookmark img{
-    @apply w-[38px] m-0
+    @apply w-[38px] m-0 
+}
+.proj-btn .bookmark span{
+    @apply pl-2
 }
 .proj-rise{
     @apply border rounded-lg bg-white py-2 mb-3
@@ -64,7 +67,7 @@ body{
     @apply flex space-x-16 items-center py-2
 }
 .rises p{
-    @apply border-red-400 border-2 font-bold text-3xl px-8
+    @apply font-bold text-3xl px-8
 }
 .rises p span{
     @apply block font-normal text-sm
@@ -76,7 +79,7 @@ body{
     @apply w-full
 }
 .abt-proj{
-    @apply bg-white p-8 pb-14 border rounded-lg
+    @apply bg-white p-8 pb-14 border rounded-lg mb-10
 }
 .abt-proj .abt-head{
     @apply font-bold text-lg pb-4
@@ -109,8 +112,8 @@ body{
     @apply text-sm font-normal
 }
 .bam_foot .select{
-    @apply text-white bg-ModerateCyan border rounded-xl px-2 py-1
+    @apply text-white cursor-pointer bg-ModerateCyan border rounded-3xl px-2 py-1 hover:bg-DarkCyan
 }
 .bam_foot .sos{
-    @apply text-white bg-Darkgray border rounded-xl px-2 py-1
+    @apply text-white bg-Darkgray border rounded-3xl px-2 py-1
 }
