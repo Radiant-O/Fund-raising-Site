@@ -1,8 +1,8 @@
 <template>
-  <nav>
-    <p>About</p>
-    <p>Discover</p>
-    <p>Get Started</p>
+  <nav class="nav">
+    <a href="#">About</a>
+    <a href="#">Discover</a>
+    <a href="#">Get Started</a>
   </nav>
 </template>
 

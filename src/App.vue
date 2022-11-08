@@ -1,12 +1,14 @@
 <template>
-  <header>
-    <img src="./assets/images/logo.svg" alt="">
-    <Navbar/>
+  <header class="hero">
+    <div class="top-header">
+      <img src="./assets/images/logo.svg" alt="">
+      <Navbar/>
+    </div>
   </header>
   <body>
 
-    <!-- <Home/> -->
-    <ProjectModal/>
+    <Home/>
+    <!-- <ProjectModal/> -->
   </body>
 </template>
 

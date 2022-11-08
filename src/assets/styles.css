@@ -1,3 +1,116 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid white;  */
+}
+
+.hero{
+    background-image: url('../assets/images/image-hero-desktop.jpg');
+    background-position:center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 15rem;
+    
+    
+}
+.top-header{
+    @apply flex justify-between items-center pt-12 px-24
+}
+body{
+    @apply bg-gray-100 relative w-full
+}
+.nav{
+    @apply flex space-x-4 items-center text-white
+}
+.main{
+    @apply w-[50%] mb-10 absolute left-[50%]
+}
+.proj-header{
+    @apply border rounded-lg -mt-[70px] bg-white pb-5 mb-3
+}
+.proj-header img{
+    @apply mx-auto w-12 -mt-7 mb-5
+}
+.proj-header h3{
+    @apply text-center font-bold text-lg
+}
+.proj-header p{
+    @apply text-center text-[16px] text-sm
+}
+.proj-header .proj-btn{
+    @apply flex justify-between items-center px-10 py-4
+}
+.proj-btn p, .proj-btn div{
+    @apply border border-none rounded-3xl text-sm
+}
+.proj-btn .btp{
+    @apply bg-ModerateCyan p-2
+}
+.proj-btn .bookmark{
+    @apply flex items-center bg-gray-300 h-[38px] pr-3
+}
+.proj-btn .bookmark img{
+    @apply w-[38px] m-0
+}
+.proj-rise{
+    @apply border rounded-lg bg-white py-2 mb-3
+}
+.rises{
+    @apply flex space-x-16 items-center py-2
+}
+.rises p{
+    @apply border-red-400 border-2 font-bold text-3xl px-8
+}
+.rises p span{
+    @apply block font-normal text-sm
+}
+.proj-rise .input{
+    @apply m-auto w-[90%]  py-2
+}
+.input input{
+    @apply w-full
+}
+.abt-proj{
+    @apply bg-white p-8 pb-14 border rounded-lg
+}
+.abt-proj .abt-head{
+    @apply font-bold text-lg pb-4
+}
+.abt-proj .abt-cont{
+    @apply text-[15px]
+}
+.abt-bam-std{
+    @apply border-Darkgray rounded-lg mt-7 px-5 py-6 border
+}
+.abt-bam-std .bam-std{
+    @apply flex justify-between items-center pb-3
+}
+.bam-std .edition{
+    @apply font-bold text-lg
+}
+.bam-std .pledge{
+    @apply text-DarkCyan font-bold
+}
+.abt-bam{
+    @apply text-[15px]
+}
+.bam_foot{
+    @apply flex justify-between mt-3
+}
+.bam_foot .avail{
+    @apply text-xl font-bold
+}
+.bam_foot .avail span{
+    @apply text-sm font-normal
+}
+.bam_foot .select{
+    @apply text-white bg-ModerateCyan border rounded-xl px-2 py-1
+}
+.bam_foot .sos{
+    @apply text-white bg-Darkgray border rounded-xl px-2 py-1
+}
