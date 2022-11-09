@@ -121,7 +121,7 @@ body{
 /* The ProjectModal */
 
 .supt-modal{
-    @apply absolute w-[50%] bg-white left-[25%] border rounded-lg p-8
+    @apply absolute w-[50%] bg-white left-[25%] border rounded-lg p-8 top-36
 }
 .supt-modal img{
     @apply float-right pb-4 cursor-pointer
@@ -182,4 +182,21 @@ body{
 }
 
 /* confirmation Modal */
-
+.confirmModal{
+    @apply fixed top-0  inset-0 h-[100vh]
+}
+.confirm{
+    @apply w-[28%] border-none bg-white p-8 rounded-2xl mx-auto mt-[25vh] text-justify
+}
+.confirm img{
+    @apply mx-auto w-12
+}
+.confirm .thanks{
+    @apply font-bold py-2 text-center
+}
+.confirm .thanks-cont{
+    @apply text-center text-Darkgray pb-3
+}
+.confirm .conf-btn{
+    @apply text-center text-white text-sm font-bold border-none rounded-3xl w-fit bg-ModerateCyan py-2 px-4 mx-auto my-2 cursor-pointer
+}

@@ -8,19 +8,28 @@
   <body>
     <Home />
   </body>
-  <ProjectModal />
+  <ProjectModal 
+  />
+  <ConfirmModal/>
 </template>
 
 <script>
 import Navbar from "./components/Navbar.vue";
 import ProjectModal from "./components/ProjectModal.vue";
 import Home from "./views/Home.vue";
+import ConfirmModal from "./components/ConfirmModal.vue"
 export default {
   components: {
     Navbar,
     Home,
     ProjectModal,
+    ConfirmModal
   },
+  data(){
+    return{
+      
+    }
+  }
 };
 </script>
 
