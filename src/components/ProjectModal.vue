@@ -16,7 +16,7 @@
       <div class="proj-supt-head">
         <p class="choice">Pledge with no reward</p>
         <p class="proj-content">
-          Choose to support us without a rreward if you simply believe in our
+          Choose to support us without a reward if you simply believe in our
           project. As a backer, you will be signed up to receive product update
           via email.
         </p>
@@ -29,17 +29,18 @@
       </div>
       <div class="proj-supt-head">
         <div class="proj-head">
-          <div>
+          <div class="mob">
             <p class="choice">Bamboo Stand</p>
             <p class="pledge">Pledge $25 or more</p>
           </div>
-          <p class="avail">101 <span>left</span></p>
+          <p class="avail sm:hidden lg:block">101 <span>left</span></p>
         </div>
         <p class="proj-content">
           You get an ergonomic stand made of natural bamboo. You've helped us
           launch our promotional campaign, and you’ll be added to a special
           Backer member list.
         </p>
+        <p class="avail lg:hidden">101 <span>left</span></p>
         <hr />
         <div>
         <div class="show-pledge">
@@ -59,17 +60,18 @@
       </div>
       <div class="proj-supt-head">
         <div class="proj-head">
-          <div>
+          <div class="mob">
             <p class="choice">Black Edition Stand</p>
             <p class="pledge">Pledge $75 or more</p>
           </div>
-          <p class="avail">64 <span>left</span></p>
+          <p class="avail sm:hidden lg:block">64 <span>left</span></p>
         </div>
         <p class="proj-content">
           You get a Black Special Edition computer stand and a personal thank you.
           You'll be added to our Backer member list. Shipping is included.
         </p>
         <div>
+          <p class="avail lg:hidden">101 <span>left</span></p>
         <hr />
         <div class="show-pledge">
           <p>Enter your pledge</p>
@@ -88,16 +90,18 @@
       </div>
       <div class="proj-supt-head">
         <div class="proj-head">
-          <div>
+          <div class="mob">
             <p class="choice">Mahogany Special Edition</p>
             <p class="pledge">Pledge $200 or more</p>
           </div>
-          <p class="avail">0 <span>left</span></p>
+          <p class="avail sm:hidden lg:block">0 <span>left</span></p>
         </div>
         <p class="proj-content">
           You get two Special Editioin Mahogamy stands, a Backet T-Shirt and a personal thank you. You'll be added to our Backker member list. Shipping is included.
         </p>
+        <p class="avail lg:hidden">0 <span>left</span></p>
       </div>
+      
     </div>
   </section>
 </section>

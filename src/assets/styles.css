@@ -118,34 +118,35 @@ body{
 .bam_foot{
     @apply flex lg:justify-between mt-3 sm:flex-col lg:flex-row
 }
-.avail{
+.bam_foot .avail{
     @apply text-xl font-bold sm:mt-2 lg:mt-0
 }
-.avail span{
+.bam_foot .avail span{
     @apply text-sm font-normal 
 }
 .bam_foot .select{
-    @apply text-white cursor-pointer bg-ModerateCyan border rounded-3xl px-3 py-2 hover:bg-DarkCyan sm:mt-4 lg:mt-0 sm:w-fit lg:w-0
+    @apply text-white cursor-pointer bg-ModerateCyan border rounded-3xl px-3 py-2 hover:bg-DarkCyan sm:mt-4 lg:mt-0 w-fit
 }
 .bam_foot .sos{
-    @apply text-white bg-Darkgray border rounded-3xl px-2 py-1
+    @apply text-white bg-Darkgray border rounded-3xl px-2 py-1 sm:mt-3 lg:mt-0
 }
 /* The ProjectModal */
 
 .supt-modal{
-    @apply absolute w-[50%] bg-white left-[25%] border rounded-lg p-8 top-36
+    @apply absolute lg:w-[50%] bg-white lg:left-[25%] border rounded-lg p-8 top-36 sm:w-[80%] sm:left-[10%]
 }
 .supt-modal img{
     @apply float-right pb-4 cursor-pointer
 }
 .modal-head{
-    @apply text-lg font-bold
+    @apply text-lg font-bold  
 }
 .modal-head-cont{
-    @apply text-sm mb-3
+    @apply text-sm lg:mb-3 sm:mb-5
 }
 .proj-supt{
-    @apply flex space-x-5 items-start border-Darkgray border rounded-lg px-6 py-5 mb-5 hover:border-DarkCyan hover:border-2
+    @apply lg:flex lg:space-x-5 items-start border-Darkgray border rounded-lg px-6 py-5 mb-5 hover:border-DarkCyan hover:border-2
+    
 } 
 .proj-supt .circle .parent{
     @apply w-6 h-6 border items-center border-Darkgray rounded-full mt-[5px]
@@ -154,28 +155,43 @@ body{
     @apply w-4 h-4 border-none hover:bg-ModerateCyan rounded-full m-auto mt-[3px] cursor-pointer
 }
 .proj-supt-head .choice{
-    @apply font-bold text-[17px]
+    @apply font-bold lg:text-[17px] sm:text-[15px] sm:-mt-6 lg:-mt-0 sm:ml-8 lg:ml-0
+}
+.mob{
+    @apply sm:pt-[1.2rem] lg:pt-[0]
+}
+.mob .pledge{
+    @apply sm:text-[12px] lg:text-base sm:pl-6 lg:pl-0
+}
+.proj-supt-head .mob{
+    @apply sm:flex sm:flex-col lg:flex-row sm:-mt-6 lg:-mt-0
 }
 .proj-supt-head .proj-content{
-    @apply text-sm pt-3 pb-2
+    @apply text-sm lg:pt-3 pb-2 sm:pt-5
 }
 .proj-head{
-    @apply flex justify-between items-center
+    @apply lg:flex lg:justify-between lg:items-center
 }
 .proj-head div{
     @apply flex space-x-2
 }
+.proj-supt-head .avail{
+    @apply text-xl font-bold sm:mt-2 lg:mt-0 sm:mb-5 lg:mb-0
+}
+.proj-supt-head .avail span{
+    @apply text-sm font-normal 
+}
 .show-pledge{
-    @apply flex justify-between items-center mt-3
+    @apply flex justify-between lg:items-center mt-3 lg:flex-row sm:flex-col
 }
 .show-pledge p{
-    @apply text-sm
+    @apply text-sm sm:mb-3 lg:mb-0 sm:text-center lg:text-right
 }
 .show-pledge div{
-    @apply flex space-x-4
+    @apply flex lg:space-x-4 sm:justify-between lg:justify-start
 }
 .show-pledge div .amount{
-    @apply border border-Darkgray px-5 py-2 rounded-3xl text-base font-bold
+    @apply border border-Darkgray sm:px-3 lg:px-5 py-2 rounded-3xl text-base font-bold
 }
 .show-pledge div .amount span{
     @apply text-Darkgray
@@ -184,7 +200,7 @@ body{
     @apply outline-none w-6
 }
 .show-pledge div .cont{
-    @apply border bg-ModerateCyan px-5 py-2 rounded-3xl text-sm font-bold text-white cursor-pointer
+    @apply border bg-ModerateCyan lg:px-5 py-2 rounded-3xl text-sm font-bold text-white cursor-pointer sm:px-3
 }
 .moga{
     @apply opacity-50  hover:border-Darkgray hover:border
@@ -198,7 +214,7 @@ body{
     @apply fixed top-0  inset-0 h-[100vh]
 }
 .confirm{
-    @apply w-[28%] border-none bg-white p-8 rounded-2xl mx-auto mt-[25vh] text-justify
+    @apply lg:w-[28%] sm:w-[80%] border-none bg-white p-8 rounded-2xl mx-auto mt-[25vh] text-justify
 }
 .confirm img{
     @apply mx-auto w-12

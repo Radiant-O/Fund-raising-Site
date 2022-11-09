@@ -4,8 +4,7 @@
   <body>
     <Home />
   </body>
-  <!-- <ProjectModal 
-  />
+  <!-- <ProjectModal />
   <ConfirmModal/> -->
 </template>
 
