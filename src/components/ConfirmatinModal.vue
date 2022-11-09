@@ -1,6 +1,6 @@
 <template>
   <section></section>
-  <section>
+  <section class="confirm">
     <img src="../assets/images/icon-check.svg" alt="">
     <div class="confirmation-msg">
         <p>Thanks for your support!</p>

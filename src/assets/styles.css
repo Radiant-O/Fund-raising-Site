@@ -9,14 +9,13 @@
     /* border: 1px solid white;  */
 }
 
+/* Header Banner */
 .hero{
     background-image: url('../assets/images/image-hero-desktop.jpg');
     background-position:center;
     background-repeat: no-repeat;
     background-size: cover;
     height: 15rem;
-    
-    
 }
 .top-header{
     @apply flex justify-between items-center pt-12 px-24
@@ -24,9 +23,11 @@
 body{
     @apply bg-gray-100 relative w-full 
 }
+/* NavBar */
 .nav{
     @apply flex space-x-4 items-center text-white
 }
+/* The Home Page */
 .main{
     @apply w-[50%] mb-10 absolute left-[25%] 
 }
@@ -96,7 +97,7 @@ body{
 .bam-std .edition{
     @apply font-bold text-lg
 }
-.bam-std .pledge{
+.pledge{
     @apply text-DarkCyan font-bold
 }
 .abt-bam{
@@ -105,10 +106,10 @@ body{
 .bam_foot{
     @apply flex justify-between mt-3
 }
-.bam_foot .avail{
+.avail{
     @apply text-xl font-bold
 }
-.bam_foot .avail span{
+.avail span{
     @apply text-sm font-normal
 }
 .bam_foot .select{
@@ -117,3 +118,68 @@ body{
 .bam_foot .sos{
     @apply text-white bg-Darkgray border rounded-3xl px-2 py-1
 }
+/* The ProjectModal */
+
+.supt-modal{
+    @apply absolute w-[50%] bg-white left-[25%] border rounded-lg p-8
+}
+.supt-modal img{
+    @apply float-right pb-4 cursor-pointer
+}
+.modal-head{
+    @apply text-lg font-bold
+}
+.modal-head-cont{
+    @apply text-sm mb-3
+}
+.proj-supt{
+    @apply flex space-x-5 items-start border-Darkgray border rounded-lg px-6 py-5 mb-5 hover:border-DarkCyan hover:border-2
+} 
+.proj-supt .circle .parent{
+    @apply w-6 h-6 border items-center border-Darkgray rounded-full mt-[5px]
+}
+.proj-supt .circle .parent p{
+    @apply w-4 h-4 border-none hover:bg-ModerateCyan rounded-full m-auto mt-[3px] cursor-pointer
+}
+.proj-supt-head .choice{
+    @apply font-bold text-[17px]
+}
+.proj-supt-head .proj-content{
+    @apply text-sm pt-3 pb-2
+}
+.proj-head{
+    @apply flex justify-between items-center
+}
+.proj-head div{
+    @apply flex space-x-2
+}
+.show-pledge{
+    @apply flex justify-between items-center mt-3
+}
+.show-pledge p{
+    @apply text-sm
+}
+.show-pledge div{
+    @apply flex space-x-4
+}
+.show-pledge div .amount{
+    @apply border border-Darkgray px-5 py-2 rounded-3xl text-base font-bold
+}
+.show-pledge div .amount span{
+    @apply text-Darkgray
+}
+.show-pledge div .amount input{
+    @apply outline-none w-6
+}
+.show-pledge div .cont{
+    @apply border bg-ModerateCyan px-5 py-2 rounded-3xl text-sm font-bold text-white cursor-pointer
+}
+.moga{
+    @apply opacity-50  hover:border-Darkgray hover:border
+}
+.moga .circle .parent p{
+    @apply w-4 h-4 border-none hover:bg-white rounded-full m-auto mt-[3px] cursor-auto
+}
+
+/* confirmation Modal */
+

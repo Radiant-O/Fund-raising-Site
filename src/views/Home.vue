@@ -68,7 +68,7 @@
           </div>
         </div>
 
-        <div class="abt-bam-std">
+        <div class="abt-bam-std moga">
           <div class="bam-std">
             <p class="edition">Mahogany Special Edition</p>
             <p class="pledge">Pledge $200 or more</p>

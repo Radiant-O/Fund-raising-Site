@@ -1,27 +1,27 @@
 <template>
   <header class="hero">
     <div class="top-header">
-      <img src="./assets/images/logo.svg" alt="">
-      <Navbar/>
+      <img src="./assets/images/logo.svg" alt="" />
+      <Navbar />
     </div>
   </header>
   <body>
-
-    <Home/>
-    <!-- <ProjectModal/> -->
+    <Home />
   </body>
+  <ProjectModal />
 </template>
 
 <script>
-import Navbar from './components/Navbar.vue';
-import ProjectModal from './components/ProjectModal.vue';
-import Home from './views/Home.vue';
+import Navbar from "./components/Navbar.vue";
+import ProjectModal from "./components/ProjectModal.vue";
+import Home from "./views/Home.vue";
 export default {
-    components: { Navbar, Home, ProjectModal }
-}
+  components: {
+    Navbar,
+    Home,
+    ProjectModal,
+  },
+};
 </script>
 
-<style>
-       
-
-</style>
+<style></style>
