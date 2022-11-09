@@ -1,26 +1,22 @@
 <template>
-  <header class="hero">
-    <div class="top-header">
-      <img src="./assets/images/logo.svg" alt="" />
-      <Navbar />
-    </div>
-  </header>
+  
+  <Header />
   <body>
     <Home />
   </body>
-  <ProjectModal 
+  <!-- <ProjectModal 
   />
-  <ConfirmModal/>
+  <ConfirmModal/> -->
 </template>
 
 <script>
-import Navbar from "./components/Navbar.vue";
+import Header from "./components/header.vue";
 import ProjectModal from "./components/ProjectModal.vue";
 import Home from "./views/Home.vue";
 import ConfirmModal from "./components/ConfirmModal.vue"
 export default {
   components: {
-    Navbar,
+    Header,
     Home,
     ProjectModal,
     ConfirmModal
