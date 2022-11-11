@@ -8,7 +8,7 @@
           A beautiful & handcrafted monitor stand to reduce neck and eye strain.
         </p>
         <div class="proj-btn">
-          <p class="btp">Back this project</p>
+          <p class="btp" @click="projModal" >Back this project</p>
           <div class="bookmark">
             <img src="../assets/images/icon-bookmark.svg" alt="">
              <span>Bookmark</span>
@@ -22,7 +22,7 @@
           <p class="days_left">56<span>days left</span></p>
         </div>
         <div class="input">
-          <input type="range" value="100" max="100" min="70" name="range" id="" />
+          <progress id="file" :value="80" max="100" class="rounded-2xl border-none"></progress>
         </div>
         
       </div>
@@ -50,7 +50,7 @@
           </p>
           <div class="bam_foot">
             <p class="avail">101 <span>left</span></p>
-            <p class="select">Select Reward</p>
+            <p class="select" @click="projModal">Select Reward</p>
           </div>
         </div>
 
@@ -64,7 +64,7 @@
           </p>
           <div class="bam_foot">
             <p class="avail">64 <span>left</span></p>
-            <p class="select">Select Reward</p>
+            <p class="select" @click="projModal">Select Reward</p>
           </div>
         </div>
 
@@ -87,7 +87,9 @@
 </template>
 
 <script>
-export default {};
+export default {
+  props:["projModal"]
+};
 </script>
 
 <style></style>

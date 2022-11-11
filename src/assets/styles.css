@@ -88,7 +88,7 @@ body{
 .proj-rise .input{
     @apply m-auto w-[90%]  py-2
 }
-.input input{
+.input progress{
     @apply w-full
 }
 .abt-proj{
@@ -131,7 +131,6 @@ body{
     @apply text-white bg-Darkgray border rounded-3xl px-2 py-1 sm:mt-3 lg:mt-0
 }
 /* The ProjectModal */
-
 .supt-modal{
     @apply absolute lg:w-[50%] bg-white lg:left-[25%] border rounded-lg p-8 top-36 sm:w-[80%] sm:left-[10%]
 }

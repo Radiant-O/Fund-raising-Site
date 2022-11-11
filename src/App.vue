@@ -1,11 +1,22 @@
 <template>
   
   <Header />
+
   <body>
-    <Home />
+    <Home 
+    :projModal="openProjModal"
+    />
   </body>
-  <!-- <ProjectModal />
-  <ConfirmModal/> -->
+
+  <ProjectModal 
+  v-if="openProj"
+  :projModal="openProjModal"
+  />
+
+  <ConfirmModal 
+  v-if="openConfirm"
+  :confirmModal="openConfirmModal"
+  />
 </template>
 
 <script>
@@ -22,9 +33,20 @@ export default {
   },
   data(){
     return{
-      
+      openProj: false,
+      openConfirm: false
     }
+  },
+  methods:{
+    openProjModal(){
+      this.openProj = !this.openProj
+    },
+    openConfirmModal(){
+      this.openConfirm = !this.openConfirm
+    }
+
   }
+
 };
 </script>
 
