@@ -2,7 +2,6 @@
   <section class="cta">
     <section class="supt-modal">
       <img src="../assets/images/icon-close-modal.svg" @click="projModal" />
-
       <p class="modal-head">Back this project</p>
       <p class="modal-head-cont">
         Want to support us in bringing Mastercraft Bamboo Monitor Riser out in
@@ -25,7 +24,7 @@
 
       <div class="proj-supt">
         <div class="circle">
-          <div class="parent"><p></p></div>
+          <div class="parent" @click="donateRise1"><p></p></div>
         </div>
         <div class="proj-supt-head">
           <div class="proj-head">
@@ -43,13 +42,13 @@
           <p class="avail lg:hidden">101 <span>left</span></p>
           <hr />
           <div>
-            <div class="show-pledge" v-if="donate">
+            <div class="show-pledge" v-if="donate1">
               <p>Enter your pledge</p>
               <div>
                 <p class="amount">
-                  <span>$</span> <input type="text" placeholder="25" />
+                  <span>$</span> <input type="text" placeholder="25" v-model="amountDonate" />
                 </p>
-                <p class="cont">Continue</p>
+                <p class="cont" @click="confirmModal">Continue</p>
               </div>
             </div>
           </div>
@@ -57,8 +56,8 @@
       </div>
 
       <div class="proj-supt">
-        <div class="circle" @click="donate">
-          <div class="parent"><p></p></div>
+        <div class="circle">
+          <div class="parent"><p @click="donateRise2"></p></div>
         </div>
         <div class="proj-supt-head">
           <div class="proj-head">
@@ -76,13 +75,13 @@
           <div>
             <p class="avail lg:hidden">101 <span>left</span></p>
             <hr />
-            <div class="show-pledge" v-if="donate">
+            <div class="show-pledge" v-if="donate2">
               <p>Enter your pledge</p>
               <div>
                 <p class="amount">
-                  <span>$</span> <input type="text" placeholder="75" />
+                  <span>$</span> <input type="text" v-model=amountDonate placeholder="75" />
                 </p>
-                <p class="cont">Continue</p>
+                <p class="cont" @click="confirmModal">Continue</p>
               </div>
             </div>
           </div>
@@ -114,16 +113,24 @@
 </template>
 
 <script>
+
 export default {
-  props: ["projModal"],
+  props: ["projModal", "confirmModal"],
   data() {
     return {
-      donate: false,
+      donate1: false,
+      donate2: false,
+      amountDonate: 0,
     };
   },
   methods: {
-    donareRise() {
-      this.donate = !this.donate;
+    donateRise1() {
+      this.donate1 = !this.donate1;
+      this.donate2 = false
+    },
+    donateRise2() {
+      this.donate2 = !this.donate2;
+      this.donate1 = false
     },
   },
 };

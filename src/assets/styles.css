@@ -6,7 +6,7 @@
 *{
     margin: 0;
     padding: 0;
-    /* border: 1px solid white;  */
+    /* border: 1px solid white; */
 }
 
 /* Header Banner */
@@ -151,8 +151,9 @@ body{
     @apply w-6 h-6 border items-center border-Darkgray rounded-full mt-[5px]
 }
 .proj-supt .circle .parent p{
-    @apply w-4 h-4 border-none hover:bg-ModerateCyan rounded-full m-auto mt-[3px] cursor-pointer
+    @apply w-8 h-8 border-none rounded-full m-auto mt-[3px] cursor-pointer 
 }
+
 .proj-supt-head .choice{
     @apply font-bold lg:text-[17px] sm:text-[15px] sm:-mt-6 lg:-mt-0 sm:ml-8 lg:ml-0
 }

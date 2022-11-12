@@ -11,6 +11,7 @@
   <ProjectModal 
   v-if="openProj"
   :projModal="openProjModal"
+  :confirmModal="openConfirmModal"
   />
 
   <ConfirmModal 
@@ -41,12 +42,11 @@ export default {
     openProjModal(){
       this.openProj = !this.openProj
     },
+
     openConfirmModal(){
       this.openConfirm = !this.openConfirm
     }
-
   }
-
 };
 </script>
 

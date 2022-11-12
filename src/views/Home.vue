@@ -17,7 +17,7 @@
       </div>
       <div class="proj-rise">
         <div class="rises">
-          <p class="amount">$89,914 <span>of $100,000 backed</span></p>
+          <p class="amount">${{totalDonated}} <span>of $100,000 backed</span></p>
           <p class="people_backed">5,007 <span>total backers</span></p>
           <p class="days_left">56<span>days left</span></p>
         </div>
@@ -88,6 +88,16 @@
 
 <script>
 export default {
+  data(){
+    return{
+      totalDonated: 89914
+    }
+  },
+  methods:{
+    totalAmount(){
+       
+    }
+  },
   props:["projModal"]
 };
 </script>
