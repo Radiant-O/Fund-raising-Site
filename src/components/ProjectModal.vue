@@ -9,8 +9,8 @@
       </p>
 
       <div class="proj-supt">
-        <div class="circle">
-          <div class="parent"><p></p></div>
+        <div class="circle" @click="donateRise3">
+          <input type="radio" name="radio" id="#radio">
         </div>
         <div class="proj-supt-head">
           <p class="choice">Pledge with no reward</p>
@@ -19,12 +19,23 @@
             project. As a backer, you will be signed up to receive product
             update via email.
           </p>
+          <p class="avail lg:hidden">101 <span>left</span></p>
+          <hr />
+          <div>
+           
+              
+              <div v-if="donate3">
+                
+                <p class="nocont cont" @click="confirmModal">Continue</p>
+              </div>
+           
+          </div>
         </div>
       </div>
 
       <div class="proj-supt">
-        <div class="circle">
-          <div class="parent" @click="donateRise1"><p></p></div>
+        <div class="circle" @click="donateRise1">
+          <input type="radio" name="radio" id="#radio">
         </div>
         <div class="proj-supt-head">
           <div class="proj-head">
@@ -56,8 +67,8 @@
       </div>
 
       <div class="proj-supt">
-        <div class="circle">
-          <div class="parent"><p @click="donateRise2"></p></div>
+        <div class="circle" @click="donateRise2">
+          <input type="radio" name="radio" id="#radio">
         </div>
         <div class="proj-supt-head">
           <div class="proj-head">
@@ -120,6 +131,7 @@ export default {
     return {
       donate1: false,
       donate2: false,
+      donate3: false,
       amountDonate: 0,
     };
   },
@@ -127,10 +139,17 @@ export default {
     donateRise1() {
       this.donate1 = !this.donate1;
       this.donate2 = false
+      this.donate3 = false
     },
     donateRise2() {
       this.donate2 = !this.donate2;
       this.donate1 = false
+      this.donate3 = false
+    },
+    donateRise3() {
+      this.donate3 = !this.donate3;
+      this.donate1 = false
+      this.donate2 = false
     },
   },
 };
