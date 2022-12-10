@@ -1,5 +1,8 @@
-# making
+# CrowdFunding Page
+### made with Vuejs and tailwind
 
+![CrowdFundPage](crowdfundpage.png)
+![Donation Confirmation](donationconfirmation.png)
 ## Project setup
 ```
 npm install
